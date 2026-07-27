@@ -1,7 +1,18 @@
 aid: inofab
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/inofab.png
 name: Inofab
-description: Inofab is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Inofab Health (a Clario company) is a digital respiratory health company headquartered in Ankara, Turkey, building connected spirometry and inhaler devices with cloud software for the home-based and clinical management of chronic respiratory conditions including asthma, COPD, and cystic fibrosis. Its product line spans the SpiroHome Personal portable ultrasonic spirometer, the SpiroClinic Pro and SpiroClinic Compact clinical-grade spirometers with EHR integration, the SpiroCloud web dashboard that collects and analyzes data from all connected SpiroHome and SpiroClinic devices, and the SpiroHaler smart inhaler attachments for medication adherence. Inofab was surfaced as a portfolio company of 500 Global and added to the API Evangelist network for enrichment; it does not currently publish a public developer portal, API documentation, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/inofab/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +22,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Digital Health
+- Respiratory
+- Spirometry
+- Medical Devices
+- Remote Patient Monitoring
+- Connected Devices
+- Healthcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +39,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/inofab-domain-security.yml
 - type: Website
-  url: https://spirohome.io
+  url: https://www.inofab.health/
+- type: Support
+  url: https://inofabhealth.atlassian.net/servicedesk/customer/portal/13/group/42/create/155
+- type: PrivacyPolicy
+  url: https://www.inofab.health/privacy-policy
+- type: TermsOfService
+  url: https://www.inofab.health/term-of-use
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
